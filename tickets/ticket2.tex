@@ -1,0 +1,18 @@
+\ticket{Explain the concept of overfitting in machine learning.}
+
+\subsection*{Answer}
+
+Overfitting is a common problem in machine learning where a model learns the training data too well, to the point that it also learns the noise and random fluctuations in the data. This negatively impacts the model's performance on new, unseen data.
+
+\subsubsection*{Causes of Overfitting}
+\begin{itemize}
+    \item \textbf{Model Complexity:} A model that is too complex for the given data can easily overfit.
+    \item \textbf{Insufficient Data:} With a small training dataset, the model may not be able to generalize well.
+\end{itemize}
+
+\subsubsection*{How to Prevent Overfitting}
+\begin{itemize}
+    \item \textbf{Cross-Validation:} Use techniques like k-fold cross-validation to ensure the model performs well on unseen data.
+    \item \textbf{Regularization:} Add a penalty term to the loss function to penalize large coefficients.
+    \item \textbf{Simpler Model:} Choose a less complex model.
+\end{itemize}

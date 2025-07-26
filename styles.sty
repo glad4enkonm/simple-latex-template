@@ -1,0 +1,28 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{styles}[
+    2024/05/21 Simple Exam Ticket Style
+]
+
+% Font, encoding, and Russian support
+\usepackage[english,russian]{babel}
+\usepackage[T1,T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{microtype}
+
+% Page layout
+\usepackage[a4paper, margin=2cm]{geometry}
+
+% Math symbols and environments
+\usepackage{amsmath, amsthm, amsfonts, amssymb}
+\usepackage{physics} % for derivatives, brackets, etc.
+
+% Add sections to the table of contents
+\usepackage{tocloft}
+\setcounter{tocdepth}{1}
+
+% Hyperlinks in the PDF
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+
+% Custom command for tickets
+% This adds an entry to the table of contents
+\newcommand{\ticket}[1]{\section{#1}}
